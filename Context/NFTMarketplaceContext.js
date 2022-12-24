@@ -9,13 +9,13 @@ import { create as ipfsHttpClient } from "ipfs-http-client";
 
 // const client = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
 
-const projectId = "2Est9VkeZnbrpy9tCG9W1Cm4AX1";
-const projectSecretKey = "784c35952f12c96c13f8322663576487";
+const projectId = "your id";
+const projectSecretKey = "your key";
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
 
-const subdomain = "https://daulat-nft-marketplace.infura-ipfs.io";
+const subdomain = "your subdomain";
 
 const client = ipfsHttpClient({
   host: "infura-ipfs.io",
